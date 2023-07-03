@@ -1,0 +1,33 @@
+<template>
+  <div>
+    <TypeNav/>
+    <ListContainer></ListContainer>
+    <Recommend></Recommend>
+    <Rank></Rank>
+    <Like></Like>
+    <Floor></Floor>
+    <Floor></Floor>
+  </div>
+</template>
+
+<script>
+import ListContainer from '@/views/Home/ListContainer'
+import Recommend from '@/views/Home/Recommend'
+import Rank from '@/views/Home/Rank'
+import Like from '@/views/Home/Like'
+import Floor from '@/views/Home/Floor'
+export default {
+  components:{
+    ListContainer,
+    Recommend,
+    Rank,
+    Like,
+    Floor,
+    Br
+  }
+}
+</script>
+
+<style>
+
+</style>
