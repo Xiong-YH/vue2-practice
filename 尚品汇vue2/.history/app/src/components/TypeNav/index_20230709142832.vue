@@ -1,18 +1,24 @@
 <template>
   <div class="type-nav">
             <div class="container">
-                <!-- 事件委托 -->
-                <div @mouseleave="leaveIndex">
-                    <h2 class="all">全部商品分类</h2>
-                    <div class="sort">
+                <h2 class="all">全部商品分类</h2>
+                <nav class="nav">
+                    <a href="###">服装城</a>
+                    <a href="###">美妆馆</a>
+                    <a href="###">尚品汇超市</a>
+                    <a href="###">全球购</a>
+                    <a href="###">闪购</a>
+                    <a href="###">团购</a>
+                    <a href="###">有趣</a>
+                    <a href="###">秒杀</a>
+                </nav>
+                <div class="sort">
                     <div class="all-sort-list2">
-                        <!-- 一级分类 -->
                         <div class="item" v-for="(c1,index) in home.categoryList" :key="c1.categoryId" :class="{cur:currentIndex === index}">
                             <h3 @mouseenter="changeIndex(index)" >
                                 <a href="">{{ c1.categoryName }}</a>
                             </h3>
-                            <!-- 二、三级分类 -->
-                            <div class="item-list clearfix" :style="{display:currentIndex == index ? 'block':'none'}">
+                            <div class="item-list clearfix">
                                 <div class="subitem" v-for="(c2,index) in c1.categoryChild" :key="c2.categoryId">
                                     <dl class="fore">
                                         <dt>
@@ -30,19 +36,6 @@
                         </div>
                     </div>
                 </div>
-                </div>
-                
-                <nav class="nav">
-                    <a href="###">服装城</a>
-                    <a href="###">美妆馆</a>
-                    <a href="###">尚品汇超市</a>
-                    <a href="###">全球购</a>
-                    <a href="###">闪购</a>
-                    <a href="###">团购</a>
-                    <a href="###">有趣</a>
-                    <a href="###">秒杀</a>
-                </nav>
-                
             </div>
         </div>
 </template>
@@ -72,9 +65,6 @@ export default {
         //鼠标移动某一级分类的索引值
         changeIndex(index){
             this.currentIndex = index
-        },
-        leaveIndex() {
-            this.currentIndex = -1
         }
     }
 }
@@ -190,11 +180,11 @@ export default {
                             }
                         }
 
-                        // &:hover {
-                        //     .item-list {
-                        //         display: block;
-                        //     }
-                        // }
+                        &:hover {
+                            .item-list {
+                                display: block;
+                            }
+                        }
                     }
                     .cur{
                         background-color: skyblue;

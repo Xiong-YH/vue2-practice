@@ -1,35 +1,9 @@
 <template>
   <div class="type-nav">
             <div class="container">
-                <!-- 事件委托 -->
-                <div @mouseleave="leaveIndex">
+                <div>
                     <h2 class="all">全部商品分类</h2>
-                    <div class="sort">
-                    <div class="all-sort-list2">
-                        <!-- 一级分类 -->
-                        <div class="item" v-for="(c1,index) in home.categoryList" :key="c1.categoryId" :class="{cur:currentIndex === index}">
-                            <h3 @mouseenter="changeIndex(index)" >
-                                <a href="">{{ c1.categoryName }}</a>
-                            </h3>
-                            <!-- 二、三级分类 -->
-                            <div class="item-list clearfix" :style="{display:currentIndex == index ? 'block':'none'}">
-                                <div class="subitem" v-for="(c2,index) in c1.categoryChild" :key="c2.categoryId">
-                                    <dl class="fore">
-                                        <dt>
-                                            <a href="">{{c2.categoryName}}</a>
-                                        </dt>
-                                        <dd>
-                                            <em v-for="(c3,index) in c2.categoryChild" :key="c3.categoryId">
-                                                <a href="">{{c3.categoryName}}</a>
-                                            </em>
-                                            
-                                        </dd>
-                                    </dl>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    
                 </div>
                 
                 <nav class="nav">
@@ -190,11 +164,11 @@ export default {
                             }
                         }
 
-                        // &:hover {
-                        //     .item-list {
-                        //         display: block;
-                        //     }
-                        // }
+                        &:hover {
+                            .item-list {
+                                display: block;
+                            }
+                        }
                     }
                     .cur{
                         background-color: skyblue;
