@@ -4,7 +4,7 @@
                 <!-- 事件委托 -->
                 <div @mouseleave="leaveIndex" @mouseenter="enterShow">
                     <h2 class="all">全部商品分类</h2>
-                    <transition name="sort">
+                    <transition>
                         <div class="sort" v-show="show">
                     <div class="all-sort-list2" @click="goSearch">
                         <!-- 一级分类 -->
@@ -167,7 +167,6 @@ export default {
                 position: absolute;
                 background: #fafafa;
                 z-index: 999;
-                overflow: hidden;
 
                 .all-sort-list2 {
                     .item {
@@ -248,25 +247,6 @@ export default {
                         background-color: skyblue;
                     }
                 }
-            }
-
-            //过渡动画样式
-            //过渡动画开始状态
-            .sort-enter {
-                height: 0px;
-                //旋转效果
-                
-            }
-
-            //过渡动画结束
-            .sort-enter-to {
-                height: 461px;
-                
-            }
-
-            //过渡动画时间、速率
-            .sort-enter-active {
-                transition: all 2s linear;
             }
         }
     }

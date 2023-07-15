@@ -167,7 +167,6 @@ export default {
                 position: absolute;
                 background: #fafafa;
                 z-index: 999;
-                overflow: hidden;
 
                 .all-sort-list2 {
                     .item {
@@ -255,7 +254,7 @@ export default {
             .sort-enter {
                 height: 0px;
                 //旋转效果
-                
+                transform: rotate(0deg);
             }
 
             //过渡动画结束

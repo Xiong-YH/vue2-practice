@@ -167,7 +167,6 @@ export default {
                 position: absolute;
                 background: #fafafa;
                 z-index: 999;
-                overflow: hidden;
 
                 .all-sort-list2 {
                     .item {
@@ -254,14 +253,13 @@ export default {
             //过渡动画开始状态
             .sort-enter {
                 height: 0px;
-                //旋转效果
-                
+                //xuan'zhua
+                transform: rotate(0deg);
             }
 
             //过渡动画结束
             .sort-enter-to {
                 height: 461px;
-                
             }
 
             //过渡动画时间、速率

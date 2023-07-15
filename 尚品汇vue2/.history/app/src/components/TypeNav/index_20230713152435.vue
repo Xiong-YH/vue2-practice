@@ -4,36 +4,8 @@
                 <!-- 事件委托 -->
                 <div @mouseleave="leaveIndex" @mouseenter="enterShow">
                     <h2 class="all">全部商品分类</h2>
-                    <transition name="sort">
-                        <div class="sort" v-show="show">
-                    <div class="all-sort-list2" @click="goSearch">
-                        <!-- 一级分类 -->
-                        <div class="item" v-for="(c1,index) in home.categoryList" :key="c1.categoryId" :class="{cur:currentIndex === index}">
-                            <h3 @mouseenter="changeIndex(index)" >
-                                <a :data-categoryName="c1.categoryName" :data-category1Id="c1.categoryId">{{ c1.categoryName }}</a>
-                                <!-- <router-link to="/search">{{ c1.categoryName }}</router-link> -->
-                            </h3>
-                            <!-- 二、三级分类 -->
-                            <div class="item-list clearfix" :style="{display:currentIndex == index ? 'block':'none'}">
-                                <div class="subitem" v-for="(c2,index) in c1.categoryChild" :key="c2.categoryId">
-                                    <dl class="fore">
-                                        <dt>
-                                            <a :data-categoryName="c2.categoryName" :data-category2Id="c2.categoryId">{{c2.categoryName}}</a>
-                                            <!-- <router-link to="/search">{{c2.categoryName}}</router-link> -->
-                                        </dt>
-                                        <dd>
-                                            <em v-for="(c3,index) in c2.categoryChild" :key="c3.categoryId">
-                                                <a :data-categoryName="c3.categoryName" :data-category3Id="c3.categoryId">{{c3.categoryName}}</a>
-                                                <!-- <router-link to="/search">{{c3.categoryName}}</router-link> -->
-                                            </em>
-                                            
-                                        </dd>
-                                    </dl>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        </div>
+                    <transition>
+                    
                     </transition>
                 </div>
                 
@@ -167,7 +139,6 @@ export default {
                 position: absolute;
                 background: #fafafa;
                 z-index: 999;
-                overflow: hidden;
 
                 .all-sort-list2 {
                     .item {
@@ -248,25 +219,6 @@ export default {
                         background-color: skyblue;
                     }
                 }
-            }
-
-            //过渡动画样式
-            //过渡动画开始状态
-            .sort-enter {
-                height: 0px;
-                //旋转效果
-                
-            }
-
-            //过渡动画结束
-            .sort-enter-to {
-                height: 461px;
-                
-            }
-
-            //过渡动画时间、速率
-            .sort-enter-active {
-                transition: all 2s linear;
             }
         }
     }

@@ -4,8 +4,7 @@
                 <!-- 事件委托 -->
                 <div @mouseleave="leaveIndex" @mouseenter="enterShow">
                     <h2 class="all">全部商品分类</h2>
-                    <transition name="sort">
-                        <div class="sort" v-show="show">
+                    <div class="sort" v-show="show">
                     <div class="all-sort-list2" @click="goSearch">
                         <!-- 一级分类 -->
                         <div class="item" v-for="(c1,index) in home.categoryList" :key="c1.categoryId" :class="{cur:currentIndex === index}">
@@ -33,8 +32,7 @@
                             </div>
                         </div>
                     </div>
-                        </div>
-                    </transition>
+                </div>
                 </div>
                 
                 <nav class="nav">
@@ -94,10 +92,6 @@ export default {
 
         leaveIndex() {
             this.currentIndex = -1
-
-            if(this.$route.path != '/home') {
-            this.show = false
-            }
         },
 
         goSearch(event) {
@@ -121,7 +115,7 @@ export default {
         },
 
         enterShow() {
-            this.show = true
+            this.show = 
         }
     }
 }
@@ -167,7 +161,6 @@ export default {
                 position: absolute;
                 background: #fafafa;
                 z-index: 999;
-                overflow: hidden;
 
                 .all-sort-list2 {
                     .item {
@@ -248,25 +241,6 @@ export default {
                         background-color: skyblue;
                     }
                 }
-            }
-
-            //过渡动画样式
-            //过渡动画开始状态
-            .sort-enter {
-                height: 0px;
-                //旋转效果
-                
-            }
-
-            //过渡动画结束
-            .sort-enter-to {
-                height: 461px;
-                
-            }
-
-            //过渡动画时间、速率
-            .sort-enter-active {
-                transition: all 2s linear;
             }
         }
     }

@@ -167,7 +167,6 @@ export default {
                 position: absolute;
                 background: #fafafa;
                 z-index: 999;
-                overflow: hidden;
 
                 .all-sort-list2 {
                     .item {
@@ -261,7 +260,7 @@ export default {
             //过渡动画结束
             .sort-enter-to {
                 height: 461px;
-                
+                transform: rotate(360deg);
             }
 
             //过渡动画时间、速率

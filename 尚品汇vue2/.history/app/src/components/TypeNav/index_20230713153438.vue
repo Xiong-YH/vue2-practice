@@ -167,7 +167,7 @@ export default {
                 position: absolute;
                 background: #fafafa;
                 z-index: 999;
-                overflow: hidden;
+                overflow: ;
 
                 .all-sort-list2 {
                     .item {
