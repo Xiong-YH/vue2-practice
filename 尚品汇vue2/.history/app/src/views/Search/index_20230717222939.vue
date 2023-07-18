@@ -1,10 +1,10 @@
 <template>
   <div>
-
+    
     <TypeNav />
     <div class="main">
       <div class="py-container">
-        <!--面包屑bread-->
+        <!--bread-->
         <div class="bread">
           <ul class="fl sui-breadcrumb">
             <li>
@@ -19,12 +19,11 @@
           </ul>
         </div>
 
-        <!--selector子组件-->
+        <!--selector-->
         <SearchSelector />
 
         <!--details-->
         <div class="details clearfix">
-          <!-- 综合销量结构 -->
           <div class="sui-navbar">
             <div class="navbar-inner filter">
               <ul class="sui-nav">
@@ -49,7 +48,6 @@
               </ul>
             </div>
           </div>
-          <!-- 产品列表 -->
           <div class="goods-list">
             <ul class="yui3-g">
               <li class="yui3-u-1-5">
@@ -294,7 +292,6 @@
               </li>
             </ul>
           </div>
-          <!-- 分页器 -->
           <div class="fr page">
             <div class="sui-pagination clearfix">
               <ul>

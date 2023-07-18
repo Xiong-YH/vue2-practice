@@ -1,4 +1,4 @@
-import {reqGetSearchInfo} from '@/api'
+import {reqGetSearchInfo} from '@'
 //state:数据状态
 const state = {}
 
@@ -6,12 +6,7 @@ const state = {}
 const mutations = {}
 
 //action:书写业务逻辑，也可处理异步
-const actions = {
-    //获取Search模块
-    async getSearchList({commit}) {
-        await reqGetSearchInfo({})
-    }
-}
+const actions = {}
 
 //getter：计算属性，简化仓库数据，让组件获取仓库数据更方便
 const getters = {

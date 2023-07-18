@@ -19,7 +19,7 @@
           </ul>
         </div>
 
-        <!--selector子组件-->
+        <!--selector-->
         <SearchSelector />
 
         <!--details-->

@@ -26,7 +26,7 @@ export default {
             immediate:true,
             handler(newValue,oldValue) {
                 this.$nextTick(()=>{
-                    var mySwiper = new Swiper (this.$refs.floor1Swiper, {
+                    var mySwiper = new Swiper (this.$ref, {
                         direction: 'horizontal', // 垂直切换选项
                         loop: true, // 循环模式选项
                         

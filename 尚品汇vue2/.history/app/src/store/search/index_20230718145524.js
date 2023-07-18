@@ -8,7 +8,7 @@ const mutations = {}
 //action:书写业务逻辑，也可处理异步
 const actions = {
     //获取Search模块
-    async getSearchList({commit}) {
+    async getSearchList({}) {
         await reqGetSearchInfo({})
     }
 }

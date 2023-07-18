@@ -14,5 +14,4 @@ export const reqFloorList = ()=>mockrequests.get('/floor')
 
 //获取搜索数据,请求方式为post，需要带参数
 // export const reqGetSearchInfo = (params)=>requests.post('/list',params)
-//调用该接口时，至少给服务器传递一个默认参数【至少是一个空对象】，否则获取失败
-export const reqGetSearchInfo = (params)=>requests({url:'list',method:"post",data:params})
+export const reqGetSearchInfo = (params)=>requests

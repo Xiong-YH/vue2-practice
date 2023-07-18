@@ -19,12 +19,11 @@
           </ul>
         </div>
 
-        <!--selector子组件-->
+        <!--selector-->
         <SearchSelector />
 
         <!--details-->
         <div class="details clearfix">
-          <!-- 综合销量结构 -->
           <div class="sui-navbar">
             <div class="navbar-inner filter">
               <ul class="sui-nav">
@@ -49,7 +48,7 @@
               </ul>
             </div>
           </div>
-          <!-- 产品列表 -->
+          <!--  -->
           <div class="goods-list">
             <ul class="yui3-g">
               <li class="yui3-u-1-5">

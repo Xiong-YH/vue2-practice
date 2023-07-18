@@ -7,10 +7,7 @@ const mutations = {}
 
 //action:书写业务逻辑，也可处理异步
 const actions = {
-    //获取Search模块
-    async getSearchList({commit}) {
-        await reqGetSearchInfo({})
-    }
+    //获取
 }
 
 //getter：计算属性，简化仓库数据，让组件获取仓库数据更方便
