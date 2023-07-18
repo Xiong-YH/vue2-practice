@@ -64,7 +64,7 @@
                     </strong>
                   </div>
                   <div class="attr">
-                    <a target="_blank" href="item.html" :title="good.title">Apple苹果iPhone
+                    <a target="_blank" href="item.html" :title="good.">Apple苹果iPhone
                       6s (A1699)Apple苹果iPhone 6s (A1699)Apple苹果iPhone 6s (A1699)Apple苹果iPhone 6s (A1699)</a>
                   </div>
                   <div class="commit">

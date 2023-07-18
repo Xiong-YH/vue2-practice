@@ -26,7 +26,7 @@ const actions = {
 const getters = {
     //state是当前仓库的state
     goodsList(state) {
-        return state.searchList.goodsList ||[]
+        return state.searchList.goodsList
     },
     trademarkList(state) {
         return state.searchList.trademarkList

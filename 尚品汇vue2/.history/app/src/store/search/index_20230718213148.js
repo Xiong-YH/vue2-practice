@@ -1,13 +1,11 @@
 import {reqGetSearchInfo} from '@/api'
 //state:数据状态
-const state = {
-    searchList:{}
-}
+const state = {}
 
 //mutation:修改数据唯一手段
 const mutations = {
-    GETSEARCHLIST(state,searchList) {
-        state.searchList = searchList
+    GETSEARCHLIST(state) {
+
     }
 }
 
@@ -24,16 +22,7 @@ const actions = {
 
 //getter：计算属性，简化仓库数据，让组件获取仓库数据更方便
 const getters = {
-    //state是当前仓库的state
-    goodsList(state) {
-        return state.searchList.goodsList ||[]
-    },
-    trademarkList(state) {
-        return state.searchList.trademarkList
-    },
-    attrsList(state) {
-        return state.searchList.attrsList
-    },
+
 }
 
 //对外暴露

@@ -60,11 +60,11 @@
                   <div class="price">
                     <strong>
                       <em>¥</em>
-                      <i>{{ good.price }}</i>
+                      <i>{{ good }}</i>
                     </strong>
                   </div>
                   <div class="attr">
-                    <a target="_blank" href="item.html" :title="good.title">Apple苹果iPhone
+                    <a target="_blank" href="item.html" title="促销信息，下单即赠送三个月CIBN视频会员卡！【小米电视新品4A 58 火爆预约中】">Apple苹果iPhone
                       6s (A1699)Apple苹果iPhone 6s (A1699)Apple苹果iPhone 6s (A1699)Apple苹果iPhone 6s (A1699)</a>
                   </div>
                   <div class="commit">
